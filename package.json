@@ -1,0 +1,18 @@
+{
+  "name": "idea-lab",
+  "version": "1.0.0",
+  "description": "Where ideas come to lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jgruen@mozilla.com",
+  "license": "MPL",
+  "dependencies": {
+    "handlebars": "^3.0.3",
+    "hapi": "^8.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}

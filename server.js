@@ -5,13 +5,14 @@ server.connection({ port: 3000 });
 // Views
 server.views({
     engines: {
-        html: require('handlebars')
+        html: require('jade'),
     },
+    isCached: 'false',
     context: require('./app/data/default_context'),
     layout: 'layout',
-    layoutPath: './app/views',
-    path: './public/templates'
-  });
+    layoutPath: './app/views/layout',
+    path: './app/views'
+});
 
 // Routes 
 server.route(require('./app/routes'));
